@@ -11,6 +11,7 @@
     <title>Cjub Guarapuava</title>
 
     <!-- Styles -->
+    <link rel="shortcut icon" href="{{{ asset('images/logo2.jpeg') }}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/theme.css') }}" rel="stylesheet">
 </head>

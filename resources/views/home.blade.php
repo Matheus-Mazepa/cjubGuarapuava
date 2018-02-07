@@ -13,7 +13,7 @@
                        <div style="width: 100%; text-align: center; font-size: 40px;">
                            <label>Vagas restantes: {{$totalParticipants}}</label>
                            <div class="row">
-                                <button type="button" onclick="location.href='{{ route('participants.create') }}'">Inscreva-se</button>
+                               <a href="{{route('participants.create')}}" class="btn btn-default btn-lg">Inscreva-se</a>
                            </div>
                        </div>
                        <div id="info">

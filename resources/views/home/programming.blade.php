@@ -50,6 +50,11 @@
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
+            <td>Palestra 1: O desafio da inclusão do jovem na comunidade Ucraíno-Brasileira – Cecília Hauresko</td>
+            <td>09h15h - 10h30</td>
+            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
+        </tr>
+        <tr>
             <td>Intervalo</td>
             <td>10h30 - 10h45</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
@@ -70,7 +75,7 @@
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
-            <td>Oficnas</td>
+            <td>Oficinas</td>
             <td>14h - 15h45</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
@@ -80,7 +85,7 @@
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
-            <td>Palestra 3: Diálogo entre os Jovens e a Comunidade -Davi Primak</td>
+            <td>Palestra 3: Diálogo entre os Jovens e a Comunidade - Davi Primak</td>
             <td>16h15 - 17h30</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
@@ -100,13 +105,8 @@
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
-            <td>Noite ucraniana</td>
-            <td>21h - 22h30</td>
-            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
-        </tr>
-        <tr>
-            <td>Baile</td>
-            <td>22h30 - 02h</td>
+            <td>Confraternização</td>
+            <td>21h - 02h</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         </tbody>
@@ -123,28 +123,28 @@
         <tbody>
         <tr>
             <td>Café da manhã</td>
-            <td>07h30 - 08h30</td>
+            <td>07h30 - 09h</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
-            <td>Direcionamento para cerimônia liturgica</td>
-            <td>08h30 - 09h</td>
-            <td>Paróquia Assunção de Nossa Senhora (R. Saldanha Marinho, 354, Guarapuava - PR)</td>
-        </tr>
-        <tr>
-            <td>Cerimõnia liturgica</td>
+            <td>Cerimônia litúrgica</td>
             <td>09h - 10h</td>
             <td>Paróquia Assunção de Nossa Senhora (R. Saldanha Marinho, 354, Guarapuava - PR)</td>
         </tr>
         <tr>
-            <td>Palestra 4: Preservar as Origens a História, a Cultura e a Fé em um Mundo de Transformações - Marcos</td>
+            <td>Animação – Grupo Shalom</td>
+            <td>10h - 10:30h</td>
+            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
+        </tr>
+        <tr>
+            <td>Palestra 4: Preservar as Origens a História, a Cultura e a Fé em um Mundo de Transformações - Marcos*</td>
             <td>10h30 - 12h</td>
-            <td>Paróquia Assunção de Nossa Senhora (R. Saldanha Marinho, 354, Guarapuava - PR)</td>
+            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
             <td>Almoço e encerramento</td>
             <td>12h</td>
-            <td>Paróquia Assunção de Nossa Senhora (R. Saldanha Marinho, 354, Guarapuava - PR)</td>
+            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         </tbody>
     </table>

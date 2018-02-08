@@ -9,142 +9,129 @@
             </ul>
         </div>
     @endif
-    <h1>Inscreva-se</h1>
-<div>
-    <p>
-        {!! Form::label('name', 'Nome (*)') !!}
-    </p>
-    {!! Form::text('name') !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('cpf', 'CPF (*)') !!}
-    </p>
-    {!! Form::text('cpf', null, ['id'=>'cpf']) !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('address', 'Endereço') !!}
-    </p>
-    {!! Form::text('address') !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('community', 'Comunidade (*)') !!}
-    </p>
-    {!! Form::text('community') !!}
-</div>
-<div>
-    {!! Form::label('size_t_shirt', 'Tamanho da camiseta (*)') !!}
-    <p>
-    <label>
-        {!! Form::radio('size_t_shirt', 'P'); !!}
-        P
-    </label>
-    <label>
-        {!! Form::radio('size_t_shirt', 'M'); !!}
-        M
-    </label>
-    <label>
-        {!! Form::radio('size_t_shirt', 'G'); !!}
-        G
-    </label>
-    <label>
-        {!! Form::radio('size_t_shirt', 'GG'); !!}
-        GG
-    </label>
-    </p>
-</div>
-    <div>
-        <p>
-            {!! Form::label('babylook', 'babylook? (*)') !!}
+    <div class="panel-heading"><label style="font-size: 35px">Instruções para pagamento</label>
+        <p  style="font-size: 20px">*O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
+            <a href="#">contato@cjubguarapuava.com.br</a>
         </p>
-        <label>
-            {!! Form::radio('babylook', '1'); !!}
-            Sim
-        </label>
-        <label>
-            {!! Form::radio('babylook', '0'); !!}
-            Não
-        </label>
     </div>
-<div>
-    <p>
-        {!! Form::label('phone', 'Telefone') !!}
-    </p>
-    {!! Form::text('phone') !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('email', 'E-mail (*)') !!}
-    </p>
-    {!! Form::email('email') !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('birth_date', 'Data de Nascimento (Maiores de 16 anos)') !!}
-    </p>
-    {!! Form::text('birth_date', null, ['class'=>'datepicker']) !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('has_special_needs', 'Necessidades Especiais? (*)') !!}
-    </p>
-    <label>
-        {!! Form::radio('has_special_needs', '1'); !!}
-        Sim
-    </label>
-    <label>
-        {!! Form::radio('has_special_needs', '0'); !!}
-        Não
-    </label>
-</div>
-<div>
-    <p>
-        {!! Form::label('special_needs', 'Quais necessidades') !!}
-    </p>
-    {!! Form::text('special_needs') !!}
-</div>
-    <div>
-        <p>
-            {!! Form::label('arrives_on_friday', 'Dia da chegada (*)') !!}
-        </p>
-        <label>
-            {!! Form::radio('arrives_on_friday', '1'); !!}
-            Sexta
-        </label>
-        <label>
-            {!! Form::radio('arrives_on_friday', '0'); !!}
-            Sábado
-        </label>
-    </div>
-<div>
-    <p>
-    {!! Form::label('needs_transport', 'Precisará de transporte durante o evento dentro da cidade em Guarapuava/PR?') !!}
-    {!! Form::label('needs_transport', ' (Translado entre rodoviaria e local do evento)') !!}
-    </p>
-    <label>
-        {!! Form::radio('needs_transport', '1'); !!}
-        Sim
-    </label>
-    <label>
-        {!! Form::radio('needs_transport', '0'); !!}
-        Não
-    </label>
-</div>
-<div>
-    <p>
-        {!! Form::label('workshop_id', 'Oficina que deseja fazer') !!}
-    </p>
-    {!! Form::select('workshop_id', $workshops, null, ['placeholder' => 'Selecione uma oficina']) !!}
-</div>
-<div>
-    <p>
-        {!! Form::label('observations', 'Observações') !!}
-    </p>
-    {!! Form::textarea('observations') !!}
-</div>
-    {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
+    <painel titulo="Inscrições">
+        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+            <label for="name">Nome completo</label>
+            {!! Form::text('name', null,['class' => ' form-control']) !!}
+        </div>
+        <div class="form-group col-lg-2 col-md-6 col-sm-12">
+            <label for="cpf">CPF</label>
+            {!! Form::text('cpf', null, ['id'=>'cpf', 'class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="phone">Telefone</label>
+            {!! Form::text('phone', null, ['id' => 'phone','class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+            <label for="community">Comunidade</label>
+            {!! Form::text('community', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="community">Email</label>
+            {!! Form::email('email', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-12">
+            <label for="phone">Endereço</label>
+            {!! Form::text('address', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+            <label for="size_t_shirt">Camiseta</label>
+            <p>
+                <label>
+                    {!! Form::radio('size_t_shirt', 'P', ['class' => 'form-control']); !!}
+                    P
+                </label>
+                <label>
+                    {!! Form::radio('size_t_shirt', 'M', ['class' => 'form-control']); !!}
+                    M
+                </label>
+                <label>
+                    {!! Form::radio('size_t_shirt', 'G', ['class' => 'form-control']); !!}
+                    G
+                </label>
+                <label>
+                    {!! Form::radio('size_t_shirt', 'GG', ['class' => 'form-control']); !!}
+                    GG
+                </label>
+            </p>        </div>
+        <div class="form-group col-lg-2 col-md-6 col-sm-12">
+            <label for="babylook">Babylook?</label>
+            <p>
+                <label>
+                    {!! Form::radio('babylook', '1', ['class' => 'form-control']); !!}
+                    Sim
+                </label>
+                <label>
+                    {!! Form::radio('babylook', '0', ['class' => 'form-control']); !!}
+                    Não
+                </label>
+            </p>
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="needs_transport">Dia da chegada</label>
+            <p>
+                <label>
+                    {!! Form::radio('arrives_on_friday', '1', ['class' => 'form-control']); !!}
+                    Sexta
+                </label>
+                <label>
+                    {!! Form::radio('arrives_on_friday', '0', ['class' => 'form-control']); !!}
+                    Sábado
+                </label>
+            </p>
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="needs_transport">Data de nascimento</label>
+                {!! Form::text('birth_date', null, ['class'=>'datepicker']) !!}
+        </div>
+        <div class="form-group col-lg-12 col-md-6 col-sm-12">
+            <label for="needs_transport">Precisará de transporte durante o evento dentro da cidade em Guarapuava/PR? (Translado entre rodoviária e local do evento)</label>
+            <p>
+                <label>
+                    {!! Form::radio('needs_transport', '1', ['class' => 'form-control']); !!}
+                    Sim
+                </label>
+                <label>
+                    {!! Form::radio('needs_transport', '0', ['class' => 'form-control']); !!}
+                    Não
+                </label>
+            </p>
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="has_special_needs">Nescessidades especiais</label>
+            <p>
+                <label>
+                    {!! Form::radio('has_special_needs', '1', ['class' => 'form-control']); !!}
+                    Sim
+                </label>
+                <label>
+                    {!! Form::radio('has_special_needs', '0', ['class' => 'form-control']); !!}
+                    Não
+                </label>
+            </p>
+        </div>
+        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+            <label for="has_special_needs">Quais nescessidades</label>
+            {!! Form::text('special_needs', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+            <label for="workshop">Oficina</label>
+            {!! Form::select('workshop_id', $workshops, null, ['placeholder' => 'Selecione uma oficina', 'class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-12">
+            <label for="observations">Observações</label>
+            {!! Form::textarea('observations', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-lg-12">
+            {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
+        </div>
+    </painel>
+
     @else
         <h2>Inscrições esgotadas!</h2>
     @endif

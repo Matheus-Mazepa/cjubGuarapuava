@@ -15,6 +15,7 @@ const store = new Vuex.Store({
         participant: {
             name: undefined,
             cpf:undefined,
+            birth_date:undefined,
             phone: undefined,
             address: undefined,
             community: undefined,

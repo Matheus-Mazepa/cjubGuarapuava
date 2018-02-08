@@ -68,9 +68,9 @@
                             <input v-if="!$store.state.participant.babylook" type="text" class="form-control" name="babylook" value="Não" disabled="true">
                         </div>
                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
-                            <label for="arrives_on_friday">Dia da chegada</label>
-                            <input v-if="$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Sexta" disabled="true">
-                            <input v-if="!$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Sabado" disabled="true">
+                            <label for="needs_transport">Dia da chegada</label>
+                            <input v-if="$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Sim" disabled="true">
+                            <input v-if="!$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Não" disabled="true">
                         </div>
                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
                             <label for="needs_transport">Precisa de transporte no dia</label>

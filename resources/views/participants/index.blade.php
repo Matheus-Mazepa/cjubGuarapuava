@@ -54,7 +54,7 @@
                             <label for="community">Comunidade</label>
                             <input type="text" class="form-control" id="community" v-model="$store.state.participant.community" name="community" placeholder="Comunidade" disabled="true">
                         </div>
-                        <div class="form-group col-lg-12">
+                        <div class="form-group col-lg-12 col-md-6 col-sm-12">
                                 <label for="phone">Endereço</label>
                                 <input type="text" class="form-control" id="address" v-model="$store.state.participant.address" name="address" placeholder="Endereço" disabled="true">
                         </div>

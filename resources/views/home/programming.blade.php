@@ -123,7 +123,7 @@
         <tbody>
         <tr>
             <td>Café da manhã</td>
-            <td>07h30 - 09h</td>
+            <td>08h - 09h</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>

@@ -5,7 +5,16 @@
 #parallaxBar{
     height:750px;
     background: #004c82 url("/images/assuncaoIgreja.jpg") fixed 10% 0;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    #parallaxBar {
+        background-size: cover;
+        height:400px;
+        background: #004c82 url("/images/assuncaoIgreja.jpg") fixed 70% -35%;
+    }
 }

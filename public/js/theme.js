@@ -34,16 +34,26 @@ let input = document.getElementById("cpf");
 input.addEventListener("keydown", function (event) {
     this.value = mCPF(this.value);
 });
+input.addEventListener("blur", function (event) {
+    this.value = mCPF(this.value);
+});
 
 let inputPhone = document.getElementById("phone");
 
 inputPhone.addEventListener("keydown", function (event) {
     this.value = mPhone(this);
 });
+inputPhone.addEventListener("blur", function (event) {
+    this.value = mPhone(this);
+});
 
 let inputDate = document.getElementById("birth_date");
 
 inputDate.addEventListener("keydown", function (event) {
+    this.value = mData(this);
+});
+
+inputDate.addEventListener("blur", function (event) {
     this.value = mData(this);
 });
 
@@ -86,15 +96,3 @@ function mCPF(cpf) {
     }
     return cpf
 }
-
-$(document).ready(function(){
-    $window = $(window);
-    $('section[data-type="background"]').each(function(){
-        var $scroll = $(this);
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $scroll.data('speed'));
-            var coords = '50% '+ yPos + 'px';
-            $scroll.css({ backgroundPosition: coords });
-        });
-    });
-});

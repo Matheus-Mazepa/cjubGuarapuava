@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <section id="parallaxBar" data-speed="6" data-type="background">
-        <div class="container-fluid"></div>
-    </section>
+    <div id="parallaxBar">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">

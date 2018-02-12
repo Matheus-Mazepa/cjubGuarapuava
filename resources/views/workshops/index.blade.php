@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-    <div class="panel panel-default">
+    <div class="container" style="background-color: white;">
+    <div class="panel">
         <div class="form_inscription">
             <h1>Oficinas</h1>
             <div id="no-more-tables">

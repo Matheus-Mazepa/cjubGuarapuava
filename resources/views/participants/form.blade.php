@@ -14,9 +14,10 @@
             </div>
         @endif
         <div class="panel-heading">
-            <label style="font-size: 35px">Instruções para pagamento</label>
-            <p  style="font-size: 20px">*O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
+            <label style="font-size: 35px;">Instruções para pagamento</label>
+            <p  style="font-size: 20px"><b>*O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
                 <a href="#">contato@cjubguarapuava.com.br</a>
+            </b>
             </p>
             <label style="font-size: 25px">Conta para depósito:</label>
             <table>
@@ -47,6 +48,7 @@
             </table>
         </div>
         <painel titulo="Inscrições">
+            {!! Form::open(['url' => 'inscreva-se']) !!}
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 <label for="name">Nome completo(*)</label>
                 {!! Form::text('name', null,['class' => ' form-control']) !!}
@@ -90,7 +92,8 @@
                         {!! Form::radio('size_t_shirt', 'GG', ['class' => 'form-control']); !!}
                         GG
                     </label>
-                </p>        </div>
+                </p>
+            </div>
             <div class="form-group col-lg-2 col-md-6 col-sm-12">
                 <label for="babylook">Babylook?(*)</label>
                 <p>
@@ -162,6 +165,7 @@
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
             </div>
+            {!! Form::close() !!}
         </painel>
 
     @else

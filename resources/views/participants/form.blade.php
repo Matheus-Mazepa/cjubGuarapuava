@@ -21,6 +21,14 @@
             <label style="font-size: 25px">Conta para depósito:</label>
             <table>
                 <tr>
+                    <td>Banco:</td>
+                    <td>Banco do Brasil</td>
+                </tr>
+                <tr>
+                    <td>Tipo de conta:</td>
+                    <td>Poupança</td>
+                </tr>
+                <tr>
                     <td>Favorecido:</td>
                     <td>Tarcisio Lucavei</td>
                 </tr>

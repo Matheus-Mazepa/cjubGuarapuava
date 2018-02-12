@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="panel panel-default">
+    <div class="container" style="background-color: white;">
+        <div class="">
             <div class="form_inscription">
                 <h1>Inscrições</h1>
-        <table class="table">
-            <tr>
+                <div id="no-more-tables">
+                <table class="table col-md-12 table-bordered table-striped table-condensed cf">
+                    <thead class="cf">
+                    <tr>
                 <td>Nome</td>
                 <td>Comunidade</td>
                 <td>Oficina</td>
@@ -14,19 +16,20 @@
                 <td>Pagar</td>
                 <td>Detalhes</td>
             </tr>
+                    </thead>
             @foreach($participants as $participant)
                 <tr>
-                    <td>{{$participant->name}}</td>
-                    <td>{{$participant->community}}</td>
-                    <td>{{$participant->workshop->name}}</td>
+                    <td data-title="Nome">{{$participant->name}}</td>
+                    <td data-title="Comunidade">{{$participant->community}}</td>
+                    <td data-title="Oficina">{{$participant->workshop->name}}</td>
                     @if($participant->paid_out == true)
-                        <td>Pago</td>
-                        <td><button>Pagamento Confirmado</button></td>
+                        <td data-title="Status de pagamento">Pago</td>
+                        <td data-title="Pagar"><button>Pagamento Confirmado</button></td>
                     @else
-                        <td>Não pago</td>
-                        <td><button onclick="javascript:confirmPayment(this)" data-id="{{$participant->id}}">Confirmar pagamento</button></td>
+                        <td data-title="Status de pagamento">Não pago</td>
+                        <td data-title="Pagar"><button onclick="javascript:confirmPayment(this)" data-id="{{$participant->id}}">Confirmar pagamento</button></td>
                     @endif
-                    <td><modal-link
+                    <td data-title="Detalhe"><modal-link
                                     tipo="link"
                                     name="detalhe"
                                     titulo="Detalhe"
@@ -36,6 +39,7 @@
                 </tr>
             @endforeach
         </table>
+                </div>
                 <modal name="detalhe">
                     <painel titulo="Informações sobre o participante">
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">

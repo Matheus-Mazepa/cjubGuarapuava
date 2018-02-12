@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" style="background-color: white;">
-        <div class="">
+        <div class="panel">
             <div class="form_inscription">
                 <h1>Inscrições</h1>
                 <div id="no-more-tables">

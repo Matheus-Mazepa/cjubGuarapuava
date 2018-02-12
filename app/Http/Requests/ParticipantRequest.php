@@ -32,6 +32,7 @@ class ParticipantRequest extends FormRequest
             'arrives_on_friday' => 'required|boolean',
             'email' => 'required|email',
             'workshop_id' => 'required|exists:workshops,id',
+            'birth_date' => 'required|',
             'has_special_needs' => 'required|boolean',
         ];
     }
@@ -41,6 +42,7 @@ class ParticipantRequest extends FormRequest
         return [
             'name.required' => 'Nome é obrigatório!',
             'cpf.required' => 'CPF é obrigatório!',
+            'birth_date.required' => 'Data de nascimento é obrigatório!',
             'community.required' => 'O campo Comunidade é obrigatório!',
             'size_t_shirt.required' => 'Escolha o tamanho da camiseta!',
             'babyllok.required' => 'O campo babylook!',

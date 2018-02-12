@@ -15,7 +15,15 @@
         @endif
         <div class="panel-heading">
             <label style="font-size: 35px;">Instruções para pagamento</label>
-            <p  style="font-size: 20px"><b>*O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
+            <p style="font-size: 30px;">
+                <label>Valor da inscrição</label>
+                @if(\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,11), \Carbon\Carbon::create(2018,03,16)))
+                    <label>R$ 130,00</label>
+                @else
+                    <label>R$ 160,00</label>
+                @endIf
+            </p>
+            <p  style="font-size: 25px"><b>O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
                 <a href="#">contato@cjubguarapuava.com.br</a>
             </b>
             </p>
@@ -48,6 +56,7 @@
             </table>
         </div>
         <painel titulo="Inscrições">
+            <h3>* </h3>
             {!! Form::open(['url' => 'inscreva-se']) !!}
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 <label for="name">Nome completo(*)</label>
@@ -164,6 +173,11 @@
             </div>
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
+            </div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                <p>
+                    <p style="font-size: 20px;">* Para aqueles que forem chegar na sexta-feira o valor é de R$ 160,00</p>
+                </p>
             </div>
             {!! Form::close() !!}
         </painel>

@@ -11,7 +11,7 @@
                 <tr>
                 <td>Nome</td>
                 <td>Ministrante</td>
-                <td>Quantidade de participantes</td>
+                <td>Inscritos</td>
                 <td>Vagas disponíveis</td>
             </tr>
                 </thead>
@@ -19,7 +19,7 @@
                 <tr>
                     <td data-title="Nome">{{$workshop->name}}</td>
                     <td data-title="Palestrante">{{$workshop->minister}}</td>
-                    <td data-title="Quantidade de participantes">{{$workshop->participants()->count()}}</td>
+                    <td data-title="Inscritos">{{$workshop->participants()->count()}}</td>
                     <td data-title="Vagas disponiveis">{{$workshop->available_vacancies}}</td>
                 </tr>
             @endforeach

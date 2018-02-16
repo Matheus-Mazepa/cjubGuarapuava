@@ -17,8 +17,8 @@
             <label style="font-size: 35px;">Instruções para pagamento</label>
             <p style="font-size: 30px;">
                 <label>Valor da inscrição</label>
-                @if(\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,11), \Carbon\Carbon::create(2018,03,16)))
-                    <label>R$ 130,00</label>
+                @if(\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,11), \Carbon\Carbon::create(2018,03,23)))
+                    <label>R$ 130,00 (Até dia 23/03/2018)</label>
                 @else
                     <label>R$ 160,00</label>
                 @endIf
@@ -56,7 +56,6 @@
             </table>
         </div>
         <painel titulo="Inscrições">
-            <h3>* </h3>
             {!! Form::open(['url' => 'inscreva-se']) !!}
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 <label for="name">Nome completo(*)</label>

@@ -68,23 +68,23 @@
                         </div>
                         <div class="form-group col-lg-2 col-md-6 col-sm-12">
                             <label for="babylook">Babylook?</label>
-                            <input v-if="$store.state.participant.babylook" type="text" class="form-control" name="babylook" value="Sim" disabled="true">
-                            <input v-if="!$store.state.participant.babylook" type="text" class="form-control" name="babylook" value="Não" disabled="true">
+                            <input v-if="$store.state.participant.babylook == 1" type="text" class="form-control" name="babylook" value="Sim" disabled="true">
+                            <input v-if="$store.state.participant.babylook == 0" type="text" class="form-control" name="babylook" value="Não" disabled="true">
                         </div>
                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
                             <label for="needs_transport">Dia da chegada</label>
-                            <input v-if="$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Sim" disabled="true">
-                            <input v-if="!$store.state.participant.arrives_on_friday" type="text" class="form-control" name="arrives_on_friday" value="Não" disabled="true">
+                            <input v-if="$store.state.participant.arrives_on_friday == 1" type="text" class="form-control" name="arrives_on_friday" value="Sexta" disabled="true">
+                            <input v-if="$store.state.participant.arrives_on_friday == 0" type="text" class="form-control" name="arrives_on_friday" value="Sabado" disabled="true">
                         </div>
                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
                             <label for="needs_transport">Precisa de transporte no dia</label>
-                            <input v-if="$store.state.participant.needs_transport" type="text" class="form-control" name="needs_transport" value="Sim" disabled="true">
-                            <input v-if="!$store.state.participant.needs_transport" type="text" class="form-control" name="needs_transport" value="Não" disabled="true">
+                            <input v-if="$store.state.participant.needs_transport == 1" type="text" class="form-control" name="needs_transport" value="Sim" disabled="true">
+                            <input v-if="$store.state.participant.needs_transport == 0" type="text" class="form-control" name="needs_transport" value="Não" disabled="true">
                         </div>
                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
                             <label for="has_special_needs">Nescessidades especiais</label>
-                            <input v-if="$store.state.participant.has_special_needs" type="text" class="form-control" id="has_special_needs" v-model="$store.state.participant.special_needs" name="has_special_needs" placeholder="Nescessidades especiais" disabled="true">
-                            <input v-if="!$store.state.participant.has_special_needs" type="text" class="form-control" id="has_special_needs" value="Não" name="has_special_needs" value="Não" disabled="true">
+                            <input v-if="$store.state.participant.has_special_needs == 1" type="text" class="form-control" id="has_special_needs" v-model="$store.state.participant.special_needs" name="has_special_needs" placeholder="Nescessidades especiais" disabled="true">
+                            <input v-if="$store.state.participant.has_special_needs == 0" type="text" class="form-control" id="has_special_needs" value="Não" name="has_special_needs" value="Não" disabled="true">
                         </div>
                         <div class="form-group col-lg-4 col-md-6 col-sm-12">
                             <label for="workshop">Oficina</label>

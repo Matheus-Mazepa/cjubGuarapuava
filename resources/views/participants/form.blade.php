@@ -85,19 +85,19 @@
                 <label for="size_t_shirt">Tamanho da camiseta(*)</label>
                 <p>
                     <label>
-                        {!! Form::radio('size_t_shirt', 'P', ['class' => 'form-control']); !!}
+                        {!! Form::radio('size_t_shirt', 'P'); !!}
                         P
                     </label>
                     <label>
-                        {!! Form::radio('size_t_shirt', 'M', ['class' => 'form-control']); !!}
+                        {!! Form::radio('size_t_shirt', 'M'); !!}
                         M
                     </label>
                     <label>
-                        {!! Form::radio('size_t_shirt', 'G', ['class' => 'form-control']); !!}
+                        {!! Form::radio('size_t_shirt', 'G'); !!}
                         G
                     </label>
                     <label>
-                        {!! Form::radio('size_t_shirt', 'GG', ['class' => 'form-control']); !!}
+                        {!! Form::radio('size_t_shirt', 'GG'); !!}
                         GG
                     </label>
                 </p>
@@ -106,11 +106,11 @@
                 <label for="babylook">Babylook?(*)</label>
                 <p>
                     <label>
-                        {!! Form::radio('babylook', '1', ['class' => 'form-control']); !!}
+                        {!! Form::radio('babylook', '1'); !!}
                         Sim
                     </label>
                     <label>
-                        {!! Form::radio('babylook', '0', ['class' => 'form-control']); !!}
+                        {!! Form::radio('babylook', '0'); !!}
                         Não
                     </label>
                 </p>
@@ -119,11 +119,11 @@
                 <label for="needs_transport">Dia da chegada(*)</label>
                 <p>
                     <label>
-                        {!! Form::radio('arrives_on_friday', '1', ['class' => 'form-control']); !!}
+                        {!! Form::radio('arrives_on_friday', '1'); !!}
                         Sexta
                     </label>
                     <label>
-                        {!! Form::radio('arrives_on_friday', '0', ['class' => 'form-control']); !!}
+                        {!! Form::radio('arrives_on_friday', '0'); !!}
                         Sábado
                     </label>
                 </p>
@@ -136,11 +136,11 @@
                 <label for="needs_transport">Precisará de transporte durante o evento dentro da cidade em Guarapuava/PR? (Translado entre rodoviária e local do evento)(*)</label>
                 <p>
                     <label>
-                        {!! Form::radio('needs_transport', '1', ['class' => 'form-control']); !!}
+                        {!! Form::radio('needs_transport', '1'); !!}
                         Sim
                     </label>
                     <label>
-                        {!! Form::radio('needs_transport', '0', ['class' => 'form-control']); !!}
+                        {!! Form::radio('needs_transport', '0' ); !!}
                         Não
                     </label>
                 </p>
@@ -149,11 +149,11 @@
                 <label for="has_special_needs">Nescessidades especiais</label>
                 <p>
                     <label>
-                        {!! Form::radio('has_special_needs', '1', ['class' => 'form-control']); !!}
+                        {!! Form::radio('has_special_needs', '1'); !!}
                         Sim
                     </label>
                     <label>
-                        {!! Form::radio('has_special_needs', '0', ['class' => 'form-control']); !!}
+                        {!! Form::radio('has_special_needs', '0'); !!}
                         Não
                     </label>
                 </p>

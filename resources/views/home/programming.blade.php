@@ -129,7 +129,7 @@
         <tr>
             <td>Cerimônia litúrgica</td>
             <td>09h - 10h</td>
-            <td>Paróquia Assunção de Nossa Senhora (R. Saldanha Marinho, 354, Guarapuava - PR)</td>
+            <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
             <td>Animação – Grupo Shalom</td>

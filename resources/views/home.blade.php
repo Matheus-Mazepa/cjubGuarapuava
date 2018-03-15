@@ -23,6 +23,10 @@
                        @include("home.programming")
                        @include("home.accommodation")
                        @include("home.speakers")
+                       <h3>Apoio:</h3>
+                       <div class="col-sm-4">
+                           <img class="img-responsive" src="/images/LogoGuairaca.png" alt="Logo faculdade Guairaca">
+                       </div>
                    </div>
                     <div class="panel-body">
                         @if (session('status'))

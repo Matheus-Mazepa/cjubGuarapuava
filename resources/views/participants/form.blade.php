@@ -24,7 +24,7 @@
                 @endIf
             </p>
             <p  style="font-size: 25px"><b>O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail
-                <a href="#">contato@cjubguarapuava.com.br</a>
+                <a href="#">cjubguarapuava@outlook.com</a>
             </b>
             </p>
             <label style="font-size: 25px">Conta para depósito:</label>

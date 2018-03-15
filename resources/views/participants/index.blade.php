@@ -90,6 +90,10 @@
                             <label for="workshop">Oficina</label>
                             <input type="text" class="form-control" id="workshop" v-model="participant.workshop.name" name="workshop" placeholder="Oficina" disabled="true">
                         </div>
+                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                            <label for="workshop">Email</label>
+                            <input type="text" class="form-control" id="email" v-model="participant.email" name="workshop" placeholder="Oficina" disabled="true">
+                        </div>
                         <div class="form-group col-lg-12">
                             <label for="observations">Observações</label>
                             <textarea type="text" class="form-control" id="observations" v-model="$store.state.participant.observations" name="observations" placeholder="Observações" disabled="true"></textarea>

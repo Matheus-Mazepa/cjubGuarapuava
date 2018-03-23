@@ -16,10 +16,12 @@ function sendPatchRequest(route, data) {
     });
 }
 function confirmPayment(element) {
-
+    let result = window.confirm('Você tem certeza que deseja confirmar o pagamneto?');
     let id = element.getAttribute('data-id');
     let route = '/participantes/' + id;
-    sendPatchRequest(route, {paid_out: true});
+    if(result) {
+        sendPatchRequest(route, {paid_out: true});
+    }
 }
 let input = document.getElementById("cpf");
 

@@ -12,6 +12,7 @@
                 <td>Nome</td>
                 <td>Comunidade</td>
                 <td>Oficina</td>
+                <td>Data de inscrição</td>
                 <td>Status de pagamento</td>
                 <td>Pagar</td>
                 <td>Detalhes</td>
@@ -22,6 +23,7 @@
                     <td data-title="Nome">{{$participant->name}}</td>
                     <td data-title="Comunidade">{{$participant->community}}</td>
                     <td data-title="Oficina">{{$participant->workshop->name}}</td>
+                    <td data-title="Data de inscrição">{{$participant->created_at}}</td>
                     @if($participant->paid_out == true)
                         <td data-title="Status de pagamento">Pago</td>
                         <td data-title="Pagar"><button>Pagamento Confirmado</button></td>

@@ -60,7 +60,7 @@
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>
         <tr>
-            <td>Palestra 2: Desenvolvimento e permanência do Jovem dentro da Comunidade - Sérgio Vale da Paixão</td>
+            <td>Palestra 2: Juventude e as redes sociais: exposição e conflitos em foco - Sérgio Vale da Paixão</td>
             <td>10h45 - 12h</td>
             <td>Casa De Líderes Nossa Senhora De Guadalupe ( Rua Wilson Luiz Martins, 395, Guarapuava-PR)</td>
         </tr>

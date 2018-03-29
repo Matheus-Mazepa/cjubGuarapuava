@@ -20,7 +20,7 @@
                 @if(\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,11), \Carbon\Carbon::create(2018,03,23)))
                     <label>R$ 130,00 (Até dia 23/03/2018)</label>
                 @else
-                    <label>R$ 160,00</label>
+                    <label>R$ 130,00</label>
                 @endIf
             </p>
             <p  style="font-size: 25px"><b>O pagamento deverá ser realizado via depósito bancário ou transferência e ter seu comprovante envidado para o e-mail

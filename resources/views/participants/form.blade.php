@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" style="background-color: white; padding-top: 100px;">
-@if (\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,06), \Carbon\Carbon::create(2018,04,06)) && env('OPEN_REGISTRATIONS', false))
+@if (\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,06), \Carbon\Carbon::create(2018,05,06)) && env('OPEN_REGISTRATIONS', false))
     @if($total <= 147)
         @if ($errors->any())
             <div class="alert alert-danger">

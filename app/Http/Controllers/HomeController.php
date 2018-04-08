@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         $participantRepository = new ParticipantRepository();
-        $totalParticipants = 150 - $participantRepository->all()->count();
+        $totalParticipants = 154 - $participantRepository->all()->count();
         return view('home', compact('totalParticipants'));
     }
 }

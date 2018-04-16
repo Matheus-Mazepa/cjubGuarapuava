@@ -10,7 +10,8 @@
                     <div class="panel-heading"><label style="font-size: 30px">CJUB Guarapuava</label></div>
                    <div style="padding-left: 50px; padding-right: 50px;">
                        <div style="width: 100%; text-align: center; font-size: 40px;">
-                           <label>Vagas restantes: {{$totalParticipants}}</label>
+                           {{--<label>Vagas restantes: {{$totalParticipants}}</label>--}}
+                           <label for="">Inscrições encerradas!</label>
                            <div class="row">
                                <a href="{{route('participants.create')}}" class="btn btn-default btn-lg">Inscreva-se</a>
                            </div>

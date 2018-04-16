@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" style="background-color: white; padding-top: 100px;">
-@if (\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,06), \Carbon\Carbon::create(2018,05,06)) && env('OPEN_REGISTRATIONS', false))
+@if (false && env('OPEN_REGISTRATIONS', false))
     @if($total <= 147)
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -16,6 +16,7 @@
         <div class="panel-heading">
             <label style="font-size: 35px;">Instruções para pagamento</label>
             <p style="font-size: 30px;">
+
                 <label>Valor da inscrição</label>
                 @if(\Carbon\Carbon::now()->between(\Carbon\Carbon::create(2018,02,11), \Carbon\Carbon::create(2018,03,23)))
                     <label>R$ 130,00 (Até dia 23/03/2018)</label>
@@ -184,10 +185,10 @@
     @else
         <h2>Ficou sem se inscrever? :(</h2>
                 <label>Ainda há uma chance!</label>
-                <label>Entre em contato pelo e-mail <a href="#">contato@cjubguarapuava.com.br</a> que veremos o que podemos fazer para te ajudar!</label>
+                <label>Entre em contato pelo e-mail <a href="#">cjubguarapuava@outlook.com</a> que veremos o que podemos fazer para te ajudar!</label>
     @endif
 @else
-    <h2>As inscrições iniciarão dia 05 de Fevereiro de 2018</h2>
+            <h1>Inscrições encerradas</h1>
 @endif
     </div>
 @endSection

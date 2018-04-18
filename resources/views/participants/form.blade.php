@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" style="background-color: white; padding-top: 100px;">
-@if (false && env('OPEN_REGISTRATIONS', false))
+@if (true && env('OPEN_REGISTRATIONS', false))
     @if($total <= 147)
         @if ($errors->any())
             <div class="alert alert-danger">

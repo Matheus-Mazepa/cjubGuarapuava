@@ -3,7 +3,7 @@
 @section('content')
     <div id="parallaxBar">
     </div>
-    <div class="container">
+    <div class="container" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
@@ -24,6 +24,8 @@
                        @include("home.programming")
                        @include("home.accommodation")
                        @include("home.speakers")
+                       @include("home.climate")
+                       @include("home.tourism")
                        <h3>Apoio:</h3>
                        <div class="col-sm-4">
                            <img class="img-responsive" src="/images/LogoGuairaca.png" alt="Logo faculdade Guairaca">
@@ -31,13 +33,18 @@
                        <div class="col-sm-4">
                            <img class="img-responsive" src="/images/raiher.png" alt="Logo faculdade Guairaca">
                        </div>
+                       <div class="col-sm-3">
+                           <img class="img-responsive" src="/images/colegio fera.png" alt="Logo faculdade Guairaca">
+                       </div>
                    </div>
-                    <div class="col-sm-12" style="text-align: center">
+                    <div class="col-sm-12" style="text-align: center;">
                         <div class="row">
                             <h3>Localização</h3>
                         </div>
+                    </div>
+                    <div id="location" class="col-sm-12" style="text-align: center; padding-top: 50%;">
                         <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14417.32323692419!2d-51.4450579!3d-25.393735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84ca286804a8b49!2sCasa+De+Lideres+Nossa+Senhora+De+Guadalupe!5e0!3m2!1spt-BR!2sbr!4v1524010143063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe allowfullscreen class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14417.32323692419!2d-51.4450579!3d-25.393735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84ca286804a8b49!2sCasa+De+Lideres+Nossa+Senhora+De+Guadalupe!5e0!3m2!1spt-BR!2sbr!4v1524010143063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
 

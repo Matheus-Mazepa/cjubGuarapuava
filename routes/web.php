@@ -27,6 +27,12 @@ Route::get('/#accommodation')->name('accommodation');
 
 Route::get('/#speakers')->name('speakers');
 
+Route::get('/#tourism')->name('tourism');
+
+Route::get('/#climate')->name('climate');
+
+Route::get('/#location')->name('location');
+
 Route::get('/inscreva-se', 'ParticipantController@create')->name('participants.create');
 
 Route::post('/inscreva-se', 'ParticipantController@store')->name('participants.store');

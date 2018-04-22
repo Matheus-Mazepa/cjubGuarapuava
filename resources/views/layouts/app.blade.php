@@ -53,8 +53,10 @@
                         <li><a href="{{ route('programming') }}">Programação</a></li>
                         <li><a href="{{ route('accommodation') }}">Alojamento</a></li>
                         <li><a href="{{ route('speakers') }}">Palestrantes</a></li>
-                        <li><a href="{{route('participants.create')}}">Inscreva-se</a></li>
                         <li><a href="{{route('workshops.index')}}">Oficinas</a></li>
+                        <li><a href="{{route('climate')}}">Clima</a></li>
+                        <li><a href="{{route('tourism')}}">Turismo</a></li>
+                        <li><a href="{{route('location')}}">Localização</a></li>
                         <!-- Authentication Links -->
                     @guest
                             <li><a href="{{ route('login') }}">Entrar</a></li>

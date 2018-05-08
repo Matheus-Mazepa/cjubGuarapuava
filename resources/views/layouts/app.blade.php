@@ -50,8 +50,8 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ route('programming') }}">Programação</a></li>
-                        <li><a href="{{ route('accommodation') }}">Alojamento</a></li>
+{{--                        <li><a href="{{ route('programming') }}">Programação</a></li>--}}
+{{--                        <li><a href="{{ route('accommodation') }}">Alojamento</a></li>--}}
                         <li><a href="{{ route('speakers') }}">Palestrantes</a></li>
                         <li><a href="{{route('workshops.index')}}">Oficinas</a></li>
                         <li><a href="{{route('climate')}}">Clima</a></li>

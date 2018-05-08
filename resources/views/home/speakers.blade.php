@@ -24,7 +24,7 @@
     </div>
    <div class="row image-tourism">
         <div class="col-sm-3">
-            <img src="" class="img-responsive" alt="">
+            <img src="/images/spearkers/davi.jpeg" class="img-responsive" alt="">
         </div>
         <div class="col-sm-9">
         <h3 style="width: 100%; text-align: center; font-size: 20px;"><b>Davi Primak</b>

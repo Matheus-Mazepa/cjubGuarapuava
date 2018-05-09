@@ -17,4 +17,9 @@ class ParticipantRepository extends BaseRepository
         return Participant::class;
     }
 
+    public function all($columns = ['*'])
+    {
+        return $this->model->orderBy('paid_out', 'asc')->get();
+    }
+
 }

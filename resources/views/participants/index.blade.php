@@ -9,6 +9,7 @@
                 <table class="table col-md-12 table-bordered table-striped table-condensed cf">
                     <thead class="cf">
                     <tr>
+                <td>#</td>
                 <td>Nome</td>
                 <td>Comunidade</td>
                 <td>Oficina</td>
@@ -18,8 +19,9 @@
                 <td>Detalhes</td>
             </tr>
                     </thead>
-            @foreach($participants as $participant)
+            @foreach($participants as $index => $participant)
                 <tr>
+                    <td data-title="#">{{$index + 1}}</td>
                     <td data-title="Nome">{{$participant->name}}</td>
                     <td data-title="Comunidade">{{$participant->community}}</td>
                     <td data-title="Oficina">{{$participant->workshop->name}}</td>

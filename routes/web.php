@@ -18,6 +18,8 @@ Route::put('/participantes/{id}', 'ParticipantController@update')->name('partici
 
 Route::get('/participantes', 'ParticipantController@index')->name('participants.index')->middleware('auth');
 
+Route::resource('/fotos', 'ImagesController');
+
 
 Route::get('/', 'HomeController@index')->name('home');
 
@@ -36,7 +38,6 @@ Route::get('/#location')->name('location');
 Route::get('/inscreva-se', 'ParticipantController@create')->name('participants.create');
 
 Route::post('/inscreva-se', 'ParticipantController@store')->name('participants.store');
-
 
 
 Route::get('/oficinas', 'WorkshopController@index')->name('workshops.index');

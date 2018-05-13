@@ -37,6 +37,12 @@
     border: 0;
 }
 
+.btn-outline-secondary {
+    color: #6c757d;
+    background: transparent none;
+    border-color: #6c757d;
+}
+
 @media only screen and (max-width: 800px) {
 
     /* Force table to not be like tables anymore */

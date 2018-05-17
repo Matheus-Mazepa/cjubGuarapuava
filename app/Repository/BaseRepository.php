@@ -10,7 +10,7 @@ namespace App\Repository;
 
 abstract class BaseRepository
 {
-    protected $model;
+    public $model;
     protected $modelClass;
 
     public function __construct()

@@ -60,19 +60,19 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-{{--                        <li><a href="{{ route('programming') }}">Programação</a></li>--}}
-{{--                        <li><a href="{{ route('accommodation') }}">Alojamento</a></li>--}}
-                        <li><a href="{{ route('speakers') }}">Palestrantes</a></li>
-                        <li><a href="{{route('workshops.index')}}">Oficinas</a></li>
-                        <li><a href="{{route('climate')}}">Clima</a></li>
-                        <li><a href="{{route('tourism')}}">Turismo</a></li>
-                        <li><a href="{{route('location')}}">Localização</a></li>
-                        <!-- Authentication Links -->
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ route('images.index') }}">Fotos</a></li>
+                        {{--<li><a href="{{ route('speakers') }}">Palestrantes</a></li>--}}
+                        {{--<li><a href="{{route('workshops.index')}}">Oficinas</a></li>--}}
+                        {{--<li><a href="{{route('climate')}}">Clima</a></li>--}}
+                        {{--<li><a href="{{route('tourism')}}">Turismo</a></li>--}}
+                        {{--<li><a href="{{route('location')}}">Localização</a></li>--}}
                     @guest
                             <li><a href="{{ route('login') }}">Entrar</a></li>
                         @else
                                 <li><a href="{{ route('register') }}">Resgistrar</a></li>
                                 <li><a href="{{route('participants.index')}}">Inscrições</a></li>
+                                <li><a href="{{route('images.create')}}">Adicionar fotos</a></li>
 
                                 <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -106,5 +106,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/theme.js') }}"></script>
+    @yield('footer')
 </body>
 </html>

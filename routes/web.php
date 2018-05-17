@@ -18,7 +18,15 @@ Route::put('/participantes/{id}', 'ParticipantController@update')->name('partici
 
 Route::get('/participantes', 'ParticipantController@index')->name('participants.index')->middleware('auth');
 
-Route::resource('/fotos', 'ImagesController');
+Route::get('/fotos', 'ImagesController@index')->name('images.index');
+
+Route::get('/fotos/create', 'ImagesController@create')->name('images.create')->middleware('auth');
+
+Route::post('/fotos', 'ImagesController@store')->name('images.store')->middleware('auth');
+
+Route::get('/fotos/{id}/download', 'ImagesController@download')->name('images.download');
+
+Route::get('/fotos/get-page/{id}', 'ImagesController@getPage');
 
 
 Route::get('/', 'HomeController@index')->name('home');

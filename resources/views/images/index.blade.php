@@ -34,12 +34,16 @@
                         @foreach($imagesChunked as $image)
                             <div class="col-md-4">
                                 <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top img-responsive"  alt="Imagem congresso" style="height: 225px; width: 100%; display: block;" src="{{$image->path}}" data-holder-rendered="true">
+                                    <img class="card-img-top img-responsive" onclick="toggleModal('{{$image->path}}')" alt="Imagem congresso" style="height: 225px; width: 100%; display: block; cursor: pointer;" src="{{$image->path}}" data-holder-rendered="true">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>
-                                                <button type="button" onclick="toggleModal('{{$image->path}}');" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <form action="{{ route('images.destroy', $image->id) }}" method="POST">
+                                                    <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                    <button class="btn btn-sm btn-outline-secondary">Deletar</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -111,8 +115,12 @@
                     '                                    <div class="card-body">\n' +
                     '                                        <div class="d-flex justify-content-between align-items-center">\n' +
                     '                                            <div class="btn-group">\n' +
-                    '                                                <a type="button" href="/fotos/' + image.id + '/download" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
-                    '                                                <button type="button" onclick="toggleModal(\'' + image.path + '\');" class="btn btn-sm btn-outline-secondary">Ver</button>\n' +
+                    '                                                <form action="{{ route('images.destroy', $image->id) }}" method="POST">\n' +
+                    '                                                    <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
+                    '                                                    <input type="hidden" name="_method" value="DELETE">\n' +
+                    '                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">\n' +
+                    '                                                    <button class="btn btn-sm btn-outline-secondary">Deletar</button>\n' +
+                    '                                                </form>\n' +
                     ' </div>\n' +
                     '                                        </div>\n' +
                     '                                    </div>\n' +

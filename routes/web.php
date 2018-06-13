@@ -22,6 +22,8 @@ Route::get('/fotos', 'ImagesController@index')->name('images.index');
 
 Route::get('/fotos/create', 'ImagesController@create')->name('images.create')->middleware('auth');
 
+Route::delete('/fotos/{id}', 'ImagesController@destroy')->name('images.destroy')->middleware('auth');
+
 Route::post('/fotos', 'ImagesController@store')->name('images.store')->middleware('auth');
 
 Route::get('/fotos/{id}/download', 'ImagesController@download')->name('images.download');

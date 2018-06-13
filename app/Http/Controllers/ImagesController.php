@@ -23,7 +23,6 @@ class ImagesController extends Controller
         if ($total%$this::PER_PAGE > 0)
             $pages++;
 
-//        $images = $this->imageRepository->model->limit($this::PER_PAGE)->get();
         $images = $this->imageRepository->model->paginate($this::PER_PAGE);
         return view('images.index', compact('images', 'pages'));
     }
@@ -31,6 +30,13 @@ class ImagesController extends Controller
     public function create()
     {
         return view('images.create');
+    }
+
+    public function destroy($id)
+    {
+        $image = $this->imageRepository->find($id);
+        $image->delete();
+        return redirect()->to(route('images.index'));
     }
 
     public function store(Request $request)

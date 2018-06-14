@@ -42,7 +42,10 @@
                                                     <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>
                                                     <input type="hidden" name="_method" value="DELETE">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                    @guest
+                                                        @else
                                                     <button class="btn btn-sm btn-outline-secondary">Deletar</button>
+                                                        @endguest
                                                 </form>
                                             </div>
                                         </div>

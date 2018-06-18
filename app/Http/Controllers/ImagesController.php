@@ -51,7 +51,7 @@ class ImagesController extends Controller
     {
         $image = $this->imageRepository->find($id);
         if($image)
-            return response()->download($image->path, 'imagem_cjub_Guarapuava_' . $image->id);
+            return response()->download($image->path, 'imagem_cjub_Guarapuava_' . $image->id.'.jpeg');
     }
 
     public function getPage($page)

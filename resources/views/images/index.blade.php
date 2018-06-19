@@ -115,12 +115,12 @@
 
                 card += '<div class="col-md-4">\n' +
                     '                                <div class="card mb-4 box-shadow">\n' +
-                    '                                    <img class="card-img-top"  alt="Imagem congresso" onclick="toggleModal(' + image.path + ')" style="height: 225px; width: 100%; display: block;" src="' + image.path + '" data-holder-rendered="true">\n' +
+                    '                                    <img class="card-img-top"  alt="Imagem congresso" onclick="toggleModal(\'' + image.path + '\')" style="height: 225px; width: 100%; display: block;" src="' + image.path + '" data-holder-rendered="true">\n' +
                     '                                    <div class="card-body">\n' +
                     '                                        <div class="d-flex justify-content-between align-items-center">\n' +
                     '                                            <div class="btn-group">\n' +
                     '                                                 <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
-                    '                                                 <button class="btn btn-sm btn-outline-secondary" onclick="toggleModal(' + image.path + ')">Ver</button>\n' +
+                    '                                                 <button class="btn btn-sm btn-outline-secondary" onclick="toggleModal(\'' + image.path + '\')">Ver</button>\n' +
                     '                                                <form action="{{ route('images.destroy', $image->id) }}" method="POST">\n' +
                     '                                                    <input type="hidden" name="_method" value="DELETE">\n' +
                     '                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">\n';

@@ -38,8 +38,9 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
+                                                <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>
+                                                <button class="btn btn-sm btn-outline-secondary" onclick="toggleModal('{{$image->path}}')">Ver</button>
                                                 <form action="{{ route('images.destroy', $image->id) }}" method="POST">
-                                                    <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>
                                                     <input type="hidden" name="_method" value="DELETE">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                     @guest
@@ -118,12 +119,16 @@
                     '                                    <div class="card-body">\n' +
                     '                                        <div class="d-flex justify-content-between align-items-center">\n' +
                     '                                            <div class="btn-group">\n' +
+                    '                                                 <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
+                    '                                                 <button class="btn btn-sm btn-outline-secondary" onclick="toggleModal(\'{{$image->path}}\')">Ver</button>\n' +
                     '                                                <form action="{{ route('images.destroy', $image->id) }}" method="POST">\n' +
-                    '                                                    <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
                     '                                                    <input type="hidden" name="_method" value="DELETE">\n' +
-                    '                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">\n' +
-                    '                                                    <button class="btn btn-sm btn-outline-secondary">Deletar</button>\n' +
-                    '                                                </form>\n' +
+                    '                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">\n';
+                @guest
+                @else
+                    card += '                                                    <button class="btn btn-sm btn-outline-secondary">Deletar</button>\n';
+                @endguest
+                    card +='                                                </form>\n' +
                     ' </div>\n' +
                     '                                        </div>\n' +
                     '                                    </div>\n' +

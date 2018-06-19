@@ -115,7 +115,7 @@
 
                 card += '<div class="col-md-4">\n' +
                     '                                <div class="card mb-4 box-shadow">\n' +
-                    '                                    <img class="card-img-top"  alt="Imagem congresso" style="height: 225px; width: 100%; display: block;" src="' + image.path + '" data-holder-rendered="true">\n' +
+                    '                                    <img class="card-img-top"  alt="Imagem congresso" onclick="toggleModal(\'{{$image->path}}\')" style="height: 225px; width: 100%; display: block;" src="' + image.path + '" data-holder-rendered="true">\n' +
                     '                                    <div class="card-body">\n' +
                     '                                        <div class="d-flex justify-content-between align-items-center">\n' +
                     '                                            <div class="btn-group">\n' +

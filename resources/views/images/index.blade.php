@@ -105,7 +105,8 @@
             $album = $('#album');
             $album.html('');
             let card = '';
-
+            const urlDownload = '{{ route('images.download', ':id') }}';
+            const urlDelete = '{{ route('images.destroy', ':id') }}';
             let count = 0;
             for (let i = 0; i < images.length; i++) {
                 let image = images[i];
@@ -119,9 +120,9 @@
                     '                                    <div class="card-body">\n' +
                     '                                        <div class="d-flex justify-content-between align-items-center">\n' +
                     '                                            <div class="btn-group">\n' +
-                    '                                                 <a type="button" href="{{ route('images.download', $image->id) }}" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
+                    '                                                 <a type="button" href="' + urlDownload.replace(':id', image.id) + '" class="btn btn-sm btn-outline-secondary">Baixar</a>\n' +
                     '                                                 <button class="btn btn-sm btn-outline-secondary" onclick="toggleModal(\'' + image.path + '\')">Ver</button>\n' +
-                    '                                                <form action="{{ route('images.destroy', $image->id) }}" method="POST">\n' +
+                        '                                                <form action="' + urlDelete.replace(':id', image.id) + '" method="POST">\n' +
                     '                                                    <input type="hidden" name="_method" value="DELETE">\n' +
                     '                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">\n';
                 @guest
